@@ -1,0 +1,319 @@
+section.about-me {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 6em 0 4em 0;
+  background: @sea-shell;
+  z-index: 10;
+
+  @media @phone{
+    padding: 3em 0 2em 0;
+  }
+
+  .intro-container {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 5em auto;
+    position: relative;
+
+    @media @phone{
+      width: 90%;
+    }
+
+    .intro-heading {
+      width: 100%;
+
+      h5 {
+        .main-font(1.6em, 400, 1.8, @secondary-color);
+        margin-bottom: 0.3rem;
+
+        @media @phone{
+          font-size: 1.4em;
+        }
+      }
+
+      h2 {
+        .header-font(3.3em, 600, 1.5, @primary-color);
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+
+        @media @phone{
+          font-size: 2.3em;
+        }
+      }
+      .intro-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+
+        @media @phone{
+          flex-direction: column;
+        }
+
+        img {
+          height: 9em;
+          width: 9em;
+          border-radius: 50%;
+          margin: 0;
+
+          @media @phone{
+            margin-bottom: 15px;
+          }
+        }
+        p {
+          .main-font(1.2em, 400, 1.8, @main-font-color);
+          text-align: left;
+          padding-left: 3em;
+          letter-spacing: 2px;
+
+          @media @phone{
+            font-size: 1.1em;
+            text-align: center;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto 3.5rem auto;
+
+    @media @phone{
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+
+    }
+  }
+
+  .about-col {
+    width: 50%;
+    padding: 0 20px;
+
+    @media @phone{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      .main-font(1.2em, 800, 1.8, @primary-color);
+      letter-spacing: 1.5px;
+      margin-bottom: .7em;
+      text-transform: uppercase;
+    }
+    p {
+      .main-font(1em, 400, 1.7, @main-font-color);
+      letter-spacing: 1.8px;
+      margin-bottom: 1.6em;
+
+      @media @phone{
+        font-size: .95em;
+        letter-spacing: 1.3px;
+        padding-left: 0;
+      }
+    }
+    ul {
+      list-style: none;
+
+      @media @phone{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 40px;
+
+    @media @phone{
+      width: 100%;
+    }
+
+    h4.profile-header {
+      margin-bottom: 15px;
+    }
+    p {
+      a {
+        .main-font(1em, 400, 1.7, @main-font-color);
+        letter-spacing: 1.8px;
+        margin-bottom: 1.6em;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: @secondary-color;
+        }
+      }
+    }
+  }
+
+  .prog-bar {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 4px 0;
+    overflow: hidden;
+
+    @media @phone{
+      overflow: initial;
+    }
+  }
+
+  .span-contain {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+
+    span {
+      .main-font(.7em, 400, 1, @sea-shell);
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      background: @primary-color;
+      padding: 0.6rem 0.6rem;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      z-index: 10;
+
+      &::after {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        margin-left: -5px;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid @primary-color;
+        content: '';
+      }
+    }
+  }
+
+  .progress {
+    width: 100%;
+    height: 7px;
+    background: @chicago;
+    position: relative;
+  }
+
+  .about-buttons {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+
+    @media @phone{
+      padding: 0;
+    }
+
+    .button-col {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      @media @phone{
+        flex-direction: column;
+      }
+
+      .hire-button {
+        .dark-btn(@primary-color, @primary-color, 1.1em, transparent);
+        width: 200px;
+        font-weight: 600;
+
+        &:hover {
+          .btn-hover(@secondary-color, @secondary-color, transparent)
+        }
+      }
+      .resume-button {
+        .dark-btn(@primary-color, @sea-shell, 1.1em, @primary-color);
+        width: 200px;
+
+        &:hover {
+          .btn-hover(@sea-shell, @secondary-color, @secondary-color)
+        }
+      }
+    }
+  }
+}
+
+.sp1{
+  left: -10.5%;
+}
+.sp2{
+  left: -10.5%;
+}
+.sp3{
+  left: -10.5%;
+}
+.sp4{
+  left: -10.5%;
+}
+.sp5{
+  left: -10.5%;
+}
+
+#prog-bar1:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: @monza;
+  width: 0;
+  height: 13px;
+}
+#prog-bar2:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: @monza;
+  width: 0;
+  height: 13px;
+}
+#prog-bar3:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: @monza;
+  width: 0;
+  height: 13px;
+}
+#prog-bar4:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: @monza;
+  width: 0;
+  height: 13px;
+}
+#prog-bar5:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: @monza;
+  width: 0;
+  height: 13px;
+}

@@ -1,0 +1,37 @@
+// Variables
+
+// Color pointers
+@primary-color: @tuatara;
+@secondary-color: @monza;
+@accent-color: @blue-chill;
+
+@header-font-color: @primary-color;
+@main-font-color: @chicago;
+@section-background: @sea-shell;
+
+// Color Vars
+@monza: #BA0023;
+@tuatara: #201F1D;
+@sea-shell: #F1F1F1;
+@blue-chill: #119DA4;
+@chicago: #5C5851;
+@shuttle-gray: #5E6164;
+@porcelain: #F6F7F8;
+@waterloo: #81848E;
+
+
+@landscape-break: 767px;
+@tablet-break: 768px;
+@auto-tablet-break-upper: 991px;
+@auto-phone-break: 479px;
+
+// Media Query vars
+/* -------- Phone Media Query -------- */
+@phone: ~"only screen and (max-width: @{auto-phone-break})";
+
+/* -------- Tablet Media Query -------- */
+@tablet: ~"only screen and (min-width: @{tablet-break}) and (max-width: @{auto-tablet-break-upper})";
+
+/* -------- Landscape Media Query -------- */
+@landscape: ~"only screen and (max-width: @{landscape-break})";
+

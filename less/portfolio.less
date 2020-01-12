@@ -1,0 +1,676 @@
+section.portfolio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  background: @sea-shell;
+  z-index: 10;
+
+  @media @phone{
+    padding: 3em 0 2em 0;
+  }
+
+  .intro-container {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    background: @sea-shell;
+    position: relative;
+    padding: 6em 0 0 0;
+    z-index: 10;
+
+    @media @phone{
+      width: 90%;
+    }
+
+    .intro-heading {
+      width: 100%;
+
+      h5 {
+        .main-font(1.6em, 400, 1.8, @secondary-color);
+        margin-bottom: 0.3rem;
+
+        @media @phone{
+          font-size: 1.4em;
+        }
+      }
+
+      h2 {
+        .header-font(3.3em, 600, 1.5, @primary-color);
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+
+        @media @phone{
+          font-size: 2.3em;
+        }
+      }
+    }
+  }
+
+  .portfolio-work {
+    width: 980px;
+    height: 980px;
+
+    .portfolio-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+
+      .portfolio-upper {
+        height: 66.667%;
+        display: flex;
+        flex-direction: row;
+
+        .col-lrg {
+          display: flex;
+          flex-direction: column;
+          width: 66.667%;
+          height: 100%;
+
+          .box1 {
+            width: 100%;
+            height: 50%;
+            position: relative;
+
+            .logo-overlay {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: black;
+              z-index: 1;
+
+              .portfolio-logo {
+                width: 25%;
+              }
+            }
+
+            .bg-img {
+              height: 100%;
+              background-image: url('../images/lifegpa-screenshot.png');
+              background-position: 50% 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+
+              .bg-overlay {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+
+                .content {
+                  padding: 15px;
+                  display: flex;
+                  flex-direction: column;
+
+                  .title {
+                    margin-bottom: 15px;
+                    .main-font(1.3em, 700, 1.7, @blue-chill);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .tech-stack {
+                    margin-bottom: 5px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .description {
+                    margin-bottom: 20px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .button-container  {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .site-button {
+                      .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0 30px 0 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@sea-shell, @sea-shell, transparent)
+                      }
+                    }
+
+                    .code-button {
+                      .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .inner-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50%;
+
+            .box2 {
+              width: 50%;
+              height: 100%;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+
+              .logo-overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #F28241;
+                z-index: 1;
+  
+                .portfolio-logo {
+                  width: 60%;
+                }
+              }
+  
+              .bg-img {
+                height: 100%;
+                background-image: url('../images/lifegpa-screenshot.png');
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+  
+                .bg-overlay {
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  align-items: center;
+                  background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+  
+                  .content {
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+  
+                    .title {
+                      margin-bottom: 15px;
+                      .main-font(1.3em, 700, 1.7, @blue-chill);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .tech-stack {
+                      margin-bottom: 5px;
+                      .main-font(1em, 400, 1.7, @sea-shell);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .description {
+                      margin-bottom: 20px;
+                      .main-font(1em, 400, 1.7, @sea-shell);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .button-container  {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-start;
+  
+                      .site-button {
+                        .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                        width: 133px;
+                        font-weight: 600;
+                        margin: 0 30px 0 0;
+                        padding: 5px 25px;
+                
+                        &:hover {
+                          .btn-hover(@sea-shell, @sea-shell, transparent)
+                        }
+                      }
+  
+                      .code-button {
+                        .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                        width: 133px;
+                        font-weight: 600;
+                        margin: 0;
+                        padding: 5px 25px;
+                
+                        &:hover {
+                          .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .box3 {
+              width: 50%;
+              height: 100%;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+
+              .logo-overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #00A8C5;
+                z-index: 1;
+    
+                .portfolio-logo {
+                  width: 50%;
+                }
+              }
+
+              .bg-img {
+                height: 100%;
+                background-image: url('../images/lifegpa-screenshot.png');
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+  
+                .bg-overlay {
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  align-items: center;
+                  background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+  
+                  .content {
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+  
+                    .title {
+                      margin-bottom: 15px;
+                      .main-font(1.3em, 700, 1.7, @blue-chill);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .tech-stack {
+                      margin-bottom: 5px;
+                      .main-font(1em, 400, 1.7, @sea-shell);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .description {
+                      margin-bottom: 20px;
+                      .main-font(1em, 400, 1.7, @sea-shell);
+                      letter-spacing: 1.8px;
+                    }
+  
+                    .button-container  {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-start;
+  
+                      .site-button {
+                        .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                        width: 133px;
+                        font-weight: 600;
+                        margin: 0 30px 0 0;
+                        padding: 5px 25px;
+                
+                        &:hover {
+                          .btn-hover(@sea-shell, @sea-shell, transparent)
+                        }
+                      }
+  
+                      .code-button {
+                        .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                        width: 133px;
+                        font-weight: 600;
+                        margin: 0;
+                        padding: 5px 25px;
+                
+                        &:hover {
+                          .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .box4 {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          width: 33.3335%;
+          height: 100%;
+
+          .logo-overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #232a34;
+            z-index: 1;
+
+            .portfolio-logo {
+              width: 60%;
+            }
+          }
+
+          .bg-img {
+            height: 100%;
+            background-image: url('../images/foodiefun-full-screenshot.png');
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .bg-overlay {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: center;
+              background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+
+              .content {
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                  margin-bottom: 15px;
+                  .main-font(1.3em, 700, 1.7, @blue-chill);
+                  letter-spacing: 1.8px;
+                }
+
+                .tech-stack {
+                  margin-bottom: 5px;
+                  .main-font(1em, 400, 1.7, @sea-shell);
+                  letter-spacing: 1.8px;
+                }
+
+                .description {
+                  margin-bottom: 20px;
+                  .main-font(1em, 400, 1.7, @sea-shell);
+                  letter-spacing: 1.8px;
+                }
+
+                .button-container  {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-start;
+
+                  .site-button {
+                    .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                    width: 133px;
+                    font-weight: 600;
+                    margin: 0 30px 0 0;
+                    padding: 5px 25px;
+            
+                    &:hover {
+                      .btn-hover(@sea-shell, @sea-shell, transparent)
+                    }
+                  }
+
+                  .code-button {
+                    .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                    width: 133px;
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 5px 25px;
+            
+                    &:hover {
+                      .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .portfolio-lower {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 33.3335%;
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 100%;
+
+          .box5 {
+            width: 33.3335%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .logo-overlay {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: palevioletred;
+              z-index: 1;
+  
+              .portfolio-logo {
+                width: 50%;
+              }
+            }
+
+            .bg-img {
+              height: 100%;
+              background-image: url('../images/lifegpa-screenshot.png');
+              background-position: 50% 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+
+              .bg-overlay {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+
+                .content {
+                  padding: 15px;
+                  display: flex;
+                  flex-direction: column;
+
+                  .title {
+                    margin-bottom: 15px;
+                    .main-font(1.3em, 700, 1.7, @blue-chill);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .tech-stack {
+                    margin-bottom: 5px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .description {
+                    margin-bottom: 20px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .button-container  {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .site-button {
+                      .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0 30px 0 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@sea-shell, @sea-shell, transparent)
+                      }
+                    }
+
+                    .code-button {
+                      .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .box6 {
+            width: 66.667%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .logo-overlay {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: white;
+              z-index: 1;
+  
+              .portfolio-logo {
+                width: 25%;
+              }
+            }
+
+            .bg-img {
+              height: 100%;
+              background-image: url('../images/lifegpa-screenshot.png');
+              background-position: 50% 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+
+              .bg-overlay {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+
+                .content {
+                  padding: 15px;
+                  display: flex;
+                  flex-direction: column;
+
+                  .title {
+                    margin-bottom: 15px;
+                    .main-font(1.3em, 700, 1.7, @blue-chill);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .tech-stack {
+                    margin-bottom: 5px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .description {
+                    margin-bottom: 20px;
+                    .main-font(1em, 400, 1.7, @sea-shell);
+                    letter-spacing: 1.8px;
+                  }
+
+                  .button-container  {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .site-button {
+                      .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0 30px 0 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@sea-shell, @sea-shell, transparent)
+                      }
+                    }
+
+                    .code-button {
+                      .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                      width: 133px;
+                      font-weight: 600;
+                      margin: 0;
+                      padding: 5px 25px;
+              
+                      &:hover {
+                        .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  opacity:0;
+  z-index: -10 !important;
+  display: none;
+  transition:
+    opacity 700ms cubic-bezier(0.6, -0.28, 0.737, -0.122) 0s,
+    z-index 900ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s,
+    display 700ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s,
+}

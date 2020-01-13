@@ -100,11 +100,11 @@ const rule2 = CSSRulePlugin.getRule("#prog-bar2:after");
 const rule3 = CSSRulePlugin.getRule("#prog-bar3:after");
 const rule4 = CSSRulePlugin.getRule("#prog-bar4:after");
 const rule5 = CSSRulePlugin.getRule("#prog-bar5:after");
-const span1 = CSSRulePlugin.getRule(".sp1");
-const span2 = CSSRulePlugin.getRule(".sp2");
-const span3 = CSSRulePlugin.getRule(".sp3");
-const span4 = CSSRulePlugin.getRule(".sp4");
-const span5 = CSSRulePlugin.getRule(".sp5");
+const span1 = CSSRulePlugin.getRule("#sp1");
+const span2 = CSSRulePlugin.getRule("#sp2");
+const span3 = CSSRulePlugin.getRule("#sp3");
+const span4 = CSSRulePlugin.getRule("#sp4");
+const span5 = CSSRulePlugin.getRule("#sp5");
 
 
 
@@ -121,103 +121,103 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     cssRule: {
                       width: value1 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(span1, 2, {
                     cssRule: {
                       left: 87.5 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(rule2, 2, {
                     cssRule: {
                       width: value2 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(span2, 2, {
                     cssRule: {
                       left: 81.5 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(rule3, 2, {
                     cssRule: {
                       width: value3 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(span3, 2, {
                     cssRule: {
                       left: 89.5 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(rule4, 2, {
                     cssRule: {
                       width: value4 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(span4, 2, {
                     cssRule: {
                       left: 84.5 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(rule5, 2, {
                     cssRule: {
                       width: value5 + "%"
                     }
-                  });
+                  })
                   TweenMax.to(span5, 2, {
                     cssRule: {
                       left: 74.5 + "%"
                     }
-                  });
+                  })
                 } else if(window.scrollY < 800) {
                     TweenMax.to(rule1, 2, {
                       cssRule: {
                         width: 0
                       }
-                    });
+                    })
                     TweenMax.to(span1, 2, {
                       cssRule: {
                         left: -10.5 + "%"
                       }
-                    });
+                    })
                     TweenMax.to(rule2, 2, {
                       cssRule: {
                         width: 0
                       }
-                    });
+                    })
                     TweenMax.to(span2, 2, {
                       cssRule: {
                         left: -10.5 + "%"
                       }
-                    });
+                    })
                     TweenMax.to(rule3, 2, {
                       cssRule: {
                         width: 0
                       }
-                    });
+                    })
                     TweenMax.to(span3, 2, {
                       cssRule: {
                         left: -10.5 + "%"
                       }
-                    });
+                    })
                     TweenMax.to(rule4, 2, {
                       cssRule: {
                         width: 0
                       }
-                    });
+                    })
                     TweenMax.to(span4, 2, {
                       cssRule: {
                         left: -10.5 + "%"
                       }
-                    });
+                    })
                     TweenMax.to(rule5, 2, {
                       cssRule: {
                         width: 0
                       }
-                    });
+                    })
                     TweenMax.to(span5, 2, {
                       cssRule: {
                         left: -10.5 + "%"
                       }
-                    });
+                    })
                 }
               }
 

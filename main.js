@@ -232,8 +232,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const timelineWrap = document.querySelector(".timeline-wrap");
 const nodes = Array.from(document.querySelectorAll(".timeline-icons"));
 const hrs = Array.from(document.querySelectorAll(".timeline-content hr"));
-const iconBody = document.querySelector(".g-01");
-const iconDetail = document.querySelector(".g-02")
+const iconBody = document.querySelectorAll(".g-01");
+const iconDetail = document.querySelectorAll(".g-02")
 const cache = {
 	viewport: {},
 	rects: []
@@ -282,9 +282,12 @@ function scrollCheck() {
 		nodes[i].classList.toggle("active-icons", rect.y - offset.y < midline);
     hrs[i].classList.toggle("active-hr", rect.y - offset.y < midline);
   });
-  
-  iconBody.classList.toggle("g-01-active", cache.rects[0].y - offset.y < midline);
-  iconDetail.classList.toggle("g-02-active", cache.rects[0].y - offset.y < midline);
+  console.log(cache.rects)
+  console.log(iconDetail)
+  iconBody[0].classList.toggle("g-01-active", cache.rects[0].y - offset.y < midline);
+  iconBody[1].classList.toggle("g-01-active", cache.rects[0].y - offset.y < midline);
+  iconBody[2].classList.toggle("g-01-active", cache.rects[1].y - offset.y < midline);
+  iconDetail[0].classList.toggle("g-02-active", cache.rects[1].y - offset.y < midline);
 };
 
 // get the scroll offsets

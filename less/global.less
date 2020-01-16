@@ -125,3 +125,58 @@ body {
 .w-container:after {
   clear: both;
 }
+
+a {
+    text-decoration: none;
+    color: @sea-shell;
+
+}
+
+.button-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media @phone{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-button {
+        .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+        width: 133px;
+        font-weight: 600;
+        margin: 0 30px 0 0;
+        padding: 5px 25px;
+
+        @media @phone{
+            margin: 0 0 20px 0;
+            width: 230px;
+            padding: 15px 25px;
+            font-size: 1.1em;
+        }
+
+        &:hover {
+            .btn-hover(@sea-shell, @sea-shell, transparent)
+        }
+    }
+
+    .code-button {
+        .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+        width: 133px;
+        font-weight: 600;
+        margin: 0;
+        padding: 5px 25px;
+
+        @media @phone{
+            width: 230px;
+            padding: 15px 25px;
+            font-size: 1.1em;
+        }
+
+        &:hover {
+            .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+        }
+    }
+}

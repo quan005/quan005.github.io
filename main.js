@@ -15,6 +15,8 @@ const fixNav = document.getElementsByClassName("fixed-nav");
 const topOfResume = resume.offsetTop - 60;
 const portfolio = document.querySelector(".portfolio");
 const topOfPortfolio = portfolio.offsetTop - 20;
+const contact = document.querySelector(".contact");
+const topOfContact = contact.offsetTop - 20;
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -60,8 +62,14 @@ function checkTop() {
 function navBg() {
   if (window.scrollY >= topOfResume) {
     navBar.classList.add("light-bg");
+
     if (window.scrollY >= topOfPortfolio) {
       navBar.classList.remove("light-bg");
+
+      if (window.scrollY >= topOfContact) {
+        navBar.classList.add("light-bg");
+      }
+      
     }
   } else {
     navBar.classList.remove("light-bg");

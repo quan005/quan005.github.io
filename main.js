@@ -405,7 +405,7 @@ const showOverlays = (div) => {
 }
 
 boxes.forEach(box => {
-  box.box.onmouseover = function() {
+  box.box.onmouseenter = function() {
     hideOverlays(box.overlay);
   }
   

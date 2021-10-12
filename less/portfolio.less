@@ -9,7 +9,7 @@ section.portfolio {
   background: @sea-shell;
   z-index: 10;
 
-  @media @phone{
+  @media @phone {
     padding: 3em 0 2em 0;
   }
 
@@ -22,7 +22,7 @@ section.portfolio {
     padding: 6em 0 0 0;
     z-index: 10;
 
-    @media @phone{
+    @media @phone {
       width: 90%;
     }
 
@@ -33,7 +33,7 @@ section.portfolio {
         .main-font(1.6em, 400, 1.8, @secondary-color);
         margin-bottom: 0.3rem;
 
-        @media @phone{
+        @media @phone {
           font-size: 1.4em;
         }
       }
@@ -43,7 +43,7 @@ section.portfolio {
         margin-bottom: 3rem;
         letter-spacing: 2px;
 
-        @media @phone{
+        @media @phone {
           font-size: 2.3em;
         }
       }
@@ -54,7 +54,7 @@ section.portfolio {
     width: 980px;
     height: 980px;
 
-    @media @phone{
+    @media @phone {
       display: none;
     }
 
@@ -98,10 +98,6 @@ section.portfolio {
 
             .bg-img {
               height: 100%;
-              background-image: url('../images/lifegpa-screenshot.png');
-              background-position: 50% 50%;
-              background-size: cover;
-              background-repeat: no-repeat;
 
               .bg-overlay {
                 height: 100%;
@@ -109,7 +105,7 @@ section.portfolio {
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: center;
-                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+                background-color: rgba(32, 31, 29, 0.95); //rgba(61, 61, 61, .7)
 
                 .content {
                   padding: 15px;
@@ -159,78 +155,79 @@ section.portfolio {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background: #F28241;
+                background: #f28241;
                 z-index: 1;
-  
+
                 .portfolio-logo {
                   width: 60%;
                 }
               }
-  
+
               .bg-img {
                 height: 100%;
-                background-image: url('../images/lifegpa-screenshot.png');
-                background-position: 50% 50%;
-                background-size: cover;
-                background-repeat: no-repeat;
-  
+
                 .bg-overlay {
                   height: 100%;
                   display: flex;
                   flex-direction: column;
                   justify-content: flex-end;
                   align-items: center;
-                  background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
-  
+                  background-color: rgba(
+                    32,
+                    31,
+                    29,
+                    0.95
+                  ); //rgba(61, 61, 61, .7)
+
                   .content {
                     padding: 15px;
                     display: flex;
                     flex-direction: column;
-  
+
                     .title {
                       margin-bottom: 15px;
                       .main-font(1.3em, 700, 1.7, @blue-chill);
                       letter-spacing: 1.8px;
                     }
-  
+
                     .tech-stack {
                       margin-bottom: 5px;
                       .main-font(1em, 400, 1.7, @sea-shell);
                       letter-spacing: 1.8px;
                     }
-  
+
                     .description {
                       margin-bottom: 20px;
                       .main-font(1em, 400, 1.7, @sea-shell);
                       letter-spacing: 1.8px;
                     }
-  
-                    .button-container  {
+
+                    .button-container {
                       display: flex;
                       flex-direction: row;
                       justify-content: flex-start;
-  
+
                       .site-button {
-                        .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                        .dark-btn(@blue-chill, @blue-chill, 0.9em, transparent);
                         width: 133px;
                         font-weight: 600;
                         margin: 0 30px 0 0;
                         padding: 5px 25px;
-                
+
                         &:hover {
-                          .btn-hover(@sea-shell, @sea-shell, transparent)
+                          .btn-hover(@sea-shell, @sea-shell, transparent);
                         }
                       }
-  
+
                       .code-button {
-                        .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                        .dark-btn(@blue-chill, @tuatara, 0.9em, @blue-chill);
                         width: 133px;
                         font-weight: 600;
                         margin: 0;
                         padding: 5px 25px;
-                
+
                         &:hover {
-                          .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                          .btn-hover(@blue-chill, @sea-shell, @sea-shell);
                         }
                       }
                     }
@@ -254,9 +251,9 @@ section.portfolio {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background: #00A8C5;
+                background: #00a8c5;
                 z-index: 1;
-    
+
                 .portfolio-logo {
                   width: 50%;
                 }
@@ -264,68 +261,69 @@ section.portfolio {
 
               .bg-img {
                 height: 100%;
-                background-image: url('../images/lifegpa-screenshot.png');
-                background-position: 50% 50%;
-                background-size: cover;
-                background-repeat: no-repeat;
-  
+
                 .bg-overlay {
                   height: 100%;
                   display: flex;
                   flex-direction: column;
                   justify-content: flex-end;
                   align-items: center;
-                  background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
-  
+                  background-color: rgba(
+                    32,
+                    31,
+                    29,
+                    0.95
+                  ); //rgba(61, 61, 61, .7)
+
                   .content {
                     padding: 15px;
                     display: flex;
                     flex-direction: column;
-  
+
                     .title {
                       margin-bottom: 15px;
                       .main-font(1.3em, 700, 1.7, @blue-chill);
                       letter-spacing: 1.8px;
                     }
-  
+
                     .tech-stack {
                       margin-bottom: 5px;
                       .main-font(1em, 400, 1.7, @sea-shell);
                       letter-spacing: 1.8px;
                     }
-  
+
                     .description {
                       margin-bottom: 20px;
                       .main-font(1em, 400, 1.7, @sea-shell);
                       letter-spacing: 1.8px;
                     }
-  
-                    .button-container  {
+
+                    .button-container {
                       display: flex;
                       flex-direction: row;
                       justify-content: flex-start;
-  
+
                       .site-button {
-                        .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                        .dark-btn(@blue-chill, @blue-chill, 0.9em, transparent);
                         width: 133px;
                         font-weight: 600;
                         margin: 0 30px 0 0;
                         padding: 5px 25px;
-                
+
                         &:hover {
-                          .btn-hover(@sea-shell, @sea-shell, transparent)
+                          .btn-hover(@sea-shell, @sea-shell, transparent);
                         }
                       }
-  
+
                       .code-button {
-                        .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                        .dark-btn(@blue-chill, @tuatara, 0.9em, @blue-chill);
                         width: 133px;
                         font-weight: 600;
                         margin: 0;
                         padding: 5px 25px;
-                
+
                         &:hover {
-                          .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                          .btn-hover(@blue-chill, @sea-shell, @sea-shell);
                         }
                       }
                     }
@@ -361,10 +359,6 @@ section.portfolio {
 
           .bg-img {
             height: 100%;
-            background-image: url('../images/foodiefun-full-screenshot.png');
-            background-position: 50% 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
 
             .bg-overlay {
               height: 100%;
@@ -372,7 +366,7 @@ section.portfolio {
               flex-direction: column;
               justify-content: flex-end;
               align-items: center;
-              background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+              background-color: rgba(32, 31, 29, 0.95); //rgba(61, 61, 61, .7)
 
               .content {
                 padding: 15px;
@@ -397,32 +391,32 @@ section.portfolio {
                   letter-spacing: 1.8px;
                 }
 
-                .button-container  {
+                .button-container {
                   display: flex;
                   flex-direction: row;
                   justify-content: flex-start;
 
                   .site-button {
-                    .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                    .dark-btn(@blue-chill, @blue-chill, 0.9em, transparent);
                     width: 133px;
                     font-weight: 600;
                     margin: 0 30px 0 0;
                     padding: 5px 25px;
-            
+
                     &:hover {
-                      .btn-hover(@sea-shell, @sea-shell, transparent)
+                      .btn-hover(@sea-shell, @sea-shell, transparent);
                     }
                   }
 
                   .code-button {
-                    .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                    .dark-btn(@blue-chill, @tuatara, 0.9em, @blue-chill);
                     width: 133px;
                     font-weight: 600;
                     margin: 0;
                     padding: 5px 25px;
-            
+
                     &:hover {
-                      .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                      .btn-hover(@blue-chill, @sea-shell, @sea-shell);
                     }
                   }
                 }
@@ -461,7 +455,7 @@ section.portfolio {
               align-items: center;
               background: @secondary-color;
               z-index: 1;
-  
+
               .portfolio-logo {
                 width: 55%;
               }
@@ -469,10 +463,6 @@ section.portfolio {
 
             .bg-img {
               height: 100%;
-              background-image: url('../images/lifegpa-screenshot.png');
-              background-position: 50% 50%;
-              background-size: cover;
-              background-repeat: no-repeat;
 
               .bg-overlay {
                 height: 100%;
@@ -480,7 +470,7 @@ section.portfolio {
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: center;
-                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+                background-color: rgba(32, 31, 29, 0.95); //rgba(61, 61, 61, .7)
 
                 .content {
                   padding: 15px;
@@ -505,32 +495,32 @@ section.portfolio {
                     letter-spacing: 1.8px;
                   }
 
-                  .button-container  {
+                  .button-container {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
 
                     .site-button {
-                      .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                      .dark-btn(@blue-chill, @blue-chill, 0.9em, transparent);
                       width: 133px;
                       font-weight: 600;
                       margin: 0 30px 0 0;
                       padding: 5px 25px;
-              
+
                       &:hover {
-                        .btn-hover(@sea-shell, @sea-shell, transparent)
+                        .btn-hover(@sea-shell, @sea-shell, transparent);
                       }
                     }
 
                     .code-button {
-                      .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                      .dark-btn(@blue-chill, @tuatara, 0.9em, @blue-chill);
                       width: 133px;
                       font-weight: 600;
                       margin: 0;
                       padding: 5px 25px;
-              
+
                       &:hover {
-                        .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                        .btn-hover(@blue-chill, @sea-shell, @sea-shell);
                       }
                     }
                   }
@@ -556,7 +546,7 @@ section.portfolio {
               align-items: center;
               background: black;
               z-index: 1;
-  
+
               .portfolio-logo {
                 width: 25%;
               }
@@ -564,10 +554,6 @@ section.portfolio {
 
             .bg-img {
               height: 100%;
-              background-image: url('../images/lifegpa-screenshot.png');
-              background-position: 50% 50%;
-              background-size: cover;
-              background-repeat: no-repeat;
 
               .bg-overlay {
                 height: 100%;
@@ -575,7 +561,7 @@ section.portfolio {
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: center;
-                background-color: rgba(32, 31, 29, .95); //rgba(61, 61, 61, .7)
+                background-color: rgba(32, 31, 29, 0.95); //rgba(61, 61, 61, .7)
 
                 .content {
                   padding: 15px;
@@ -600,32 +586,32 @@ section.portfolio {
                     letter-spacing: 1.8px;
                   }
 
-                  .button-container  {
+                  .button-container {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
 
                     .site-button {
-                      .dark-btn(@blue-chill, @blue-chill, .9em, transparent);
+                      .dark-btn(@blue-chill, @blue-chill, 0.9em, transparent);
                       width: 133px;
                       font-weight: 600;
                       margin: 0 30px 0 0;
                       padding: 5px 25px;
-              
+
                       &:hover {
-                        .btn-hover(@sea-shell, @sea-shell, transparent)
+                        .btn-hover(@sea-shell, @sea-shell, transparent);
                       }
                     }
 
                     .code-button {
-                      .dark-btn(@blue-chill, @tuatara, .9em, @blue-chill);
+                      .dark-btn(@blue-chill, @tuatara, 0.9em, @blue-chill);
                       width: 133px;
                       font-weight: 600;
                       margin: 0;
                       padding: 5px 25px;
-              
+
                       &:hover {
-                        .btn-hover(@blue-chill, @sea-shell, @sea-shell)
+                        .btn-hover(@blue-chill, @sea-shell, @sea-shell);
                       }
                     }
                   }
@@ -641,7 +627,7 @@ section.portfolio {
   .portfolio-mobile {
     display: none;
 
-    @media @phone{
+    @media @phone {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -652,7 +638,7 @@ section.portfolio {
     .project-container {
       width: 80%;
       padding: 30px 20px;
-      background: #F1F1F1;
+      background: #f1f1f1;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -692,11 +678,10 @@ section.portfolio {
 }
 
 .hidden {
-  opacity:0;
+  opacity: 0;
   z-index: -10 !important;
   display: none;
-  transition:
-    opacity 700ms cubic-bezier(0.6, -0.28, 0.737, -0.122) 0s,
+  transition: opacity 700ms cubic-bezier(0.6, -0.28, 0.737, -0.122) 0s,
     z-index 900ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s,
-    display 700ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s,
+    display 700ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
 }
